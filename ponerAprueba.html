@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icono" href="imagenes/logo.png" >
+    <title>Poner a prueba</title>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav>
+        <a href="index.html">
+             <!-- Logo de computadora-->
+            <svg class="logoCompu" width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="monitorBlanco" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="monitorAzul" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tecladoBlanco"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tecladoAzul"></polygon>
+            </svg>
+            </a>
+        <!--menu de navegacion--> 
+        <ul class="menu">
+            <li class="item-menu"><a class="item-enlace" href="historia.html">HISTORIA</a></li>
+            <li class="item-menu"><a class="item-enlace" href="ponerAprueba.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1> JUGUEMOS UN POCO</h1> 
+    </header>
+
+<main>
+        <h2 class="titulo-juego">Armemos el rompecabezas y veamos que imagen es...</h2>
+              
+                        <!-----Juego----->
+        <section class="juego">
+                  <!--Espacios Vacios juego-->
+            <div class="fichaVacia" id="destinoArrastre" >
+               <div class="ficha" id="fichaArrastrar1">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="ficha" id="fichaArrastrar2">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="ficha" id="fichaArrastrar3">
+                    <p>Arrastre y suelte la imágene aquí</p>
+                </div>
+            </div>
+
+            <!--Imagenes Para Arrastrar juego-->
+            <div class="fichaimagenes" id="piezas" >
+                <img  id="imagen1" src="imagenes/rompe2.png" alt="imagen-rompecabezas" />
+                <img id="imagen2" src="imagenes/Rompe1.png" alt="imagen-rompecabezas" />
+                <img  id="imagen3" src="imagenes/Rompe3.png" alt="imagen-rompecabezas" /> 
+            </div>
+        </section>
+        
+
+        <!--Boton de reinicio juego-->
+        <button  class="reinicio" id="reiniciar">Reiniciar</button>
+        
+    </main>
+    <script src="juegos.js"></script>
+</body>
+</html>
